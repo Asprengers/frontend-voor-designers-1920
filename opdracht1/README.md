@@ -5,8 +5,8 @@ Ontwerp een user interface voor een gegeven use case. Werk je ontwerp uit in HTM
 Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
-# Project titel
-Beschrijf hier je eigen project.
+# Detail pagina studentenhuizen
+In een lijst studentenhuizen wil ik details kunnen bekijken om te bepalen of de kamer geschikt is om te huren.
 En voeg een link naar je demo toe.
 
 ## interface
