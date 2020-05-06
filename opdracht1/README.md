@@ -24,13 +24,20 @@ Deze wordt toegepast omdat het een duidelijk overzicht is met een simpele handel
 
 Elk gedeelte met informatie bestaat uit een button en een div met een id fullDetails. Hierin komt de informatie te zien. Voordat de handeling wordt gedaan staat de tekst nog verborgen door de CSS. Door middel van de javascript wordt er heen en weer getoggled.
 
-document.getElementById("detail").addEventListener("click", showDetails); // hier wordt de button naar een actie geroepen
+```
+document.getElementById("detail").addEventListener("click", showDetails);    
 
-function showDetails() { //functie wordt gemaakt  
-    var detaillist = document.getElementById('fullDetails'); //variable roept een ID van de div aan uit de html
-    if (detaillist.style.display === "none") { //if statement wordt aangemaakt en hiermee zie je of het aan of uit staat nadat je erop klipt
+function showDetails() {
+    var detaillist = document.getElementById('fullDetails'); 
+    if (detaillist.style.display === "none") {
         detaillist.style.display = "block";
-    } else { // anders een andere actie
+    } else {
         detaillist.style.display = "none";
     }
 }
+```
+hier wordt de button naar een actie geroepen
+functie wordt gemaakt  
+variable roept een ID van de div aan uit de html
+if statement wordt aangemaakt en hiermee zie je of het aan of uit staat nadat je erop klikt
+ anders een andere actie
