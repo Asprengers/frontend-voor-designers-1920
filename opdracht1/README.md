@@ -11,8 +11,7 @@ Je kunt hier zien dat er een detail pagina beschikbaar is bij het eerste huis en
 http://www.amysprengers.nl/hva/opdracht1/demo/index.html
 
 ## interface
-De interface bestaat uit drie kamers waarvan er bij de eerste een detail pagina is uitgewerkt. Door op de details + te klikken schuift er een lijst met meerdere details uit.
-Leg de interface uit. In de demo heb je de interface design principles 04 & 11 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
+De interface bestaat uit kamers waarvan er bij de eerste een detail pagina is uitgewerkt. Door op de details + te klikken schuift er een lijst met meerdere details uit.
 
 4 - Keep users in control
 Deze wordt toegepast door middel van het zelfvertrouwen die gebruikers krijgen door op een knop te krijgen. Het is een duidelijke overview met acties die toegepast worden.
@@ -28,7 +27,7 @@ Elk gedeelte met informatie bestaat uit een button en een div met een id fullDet
 document.getElementById("detail").addEventListener("click", showDetails);    
 
 function showDetails() {
-    var detaillist = document.getElementById('fullDetails'); 
+    var detaillist = document.getElementById('fullDetails');
     if (detaillist.style.display === "none") {
         detaillist.style.display = "block";
     } else {
