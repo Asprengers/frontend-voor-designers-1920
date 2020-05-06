@@ -7,7 +7,7 @@
 document.getElementById("detail").addEventListener("click", showDetails);
 
 function showDetails() {
-    var detaillist = document.getElementById("fullDetails");
+    var detaillist = document.getElementById('fullDetails');
     if (detaillist.style.display === "none") {
         detaillist.style.display = "block";
     } else {
