@@ -10,6 +10,7 @@ function showDetailsOne() {
     var detaillist = document.getElementById('fullDetailsOne');
     if (detaillist.style.display === "none") {
         detaillist.style.display = "block";
+
     } else {
         detaillist.style.display = "none";
     }
