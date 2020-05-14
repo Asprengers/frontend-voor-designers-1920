@@ -59,10 +59,7 @@ img {
     background-color: #eee;
     padding: 1em;
     margin-top: -30px;
-    -moz-transition: 1s ease-in-out;
-    -webkit-transition: 1s ease-in-out;
-    -ms-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
+
 }
 
 #detailOne {
