@@ -1,24 +1,23 @@
 document.getElementById("next").addEventListener("click", function () {
-    plusDivs(1)
+    photoSlide(1)
 });
 
 document.getElementById("previous").addEventListener("click", function () {
-    plusDivs(-1)
+    photoSlide(-1)
 });
 
 var slideIndex = 1;
-showDivs(slideIndex);
+photo(slideIndex);
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+function photoSlide(n) {
+    photo(slideIndex += n);
 }
 
-
-function currentDiv(n) {
-    showDivs(slideIndex = n);
+function currentPhoto(n) {
+    photo(slideIndex = n);
 }
 
-function showDivs(n) {
+function photo(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
     if (n > x.length) {
@@ -36,9 +35,9 @@ function showDivs(n) {
 document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
-        plusDivs(-1) //left <- show Prev image
+        photoSlide(-1) //left <- show Prev image
     } else if (e.keyCode == '39') {
         // right -> show next image
-        plusDivs(1)
+        photoSlide(1)
     }
 }
