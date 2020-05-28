@@ -32,3 +32,13 @@ function showDivs(n) {
     }
     x[slideIndex - 1].style.display = "block";
 }
+
+document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+        plusDivs(-1) //left <- show Prev image
+    } else if (e.keyCode == '39') {
+        // right -> show next image
+        plusDivs(1)
+    }
+}
