@@ -35,9 +35,9 @@ function photo(n) {
 document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
-        photoSlide(-1) //left <- show Prev image
+        photoSlide(-1)
     } else if (e.keyCode == '39') {
-        // right -> show next image
+
         photoSlide(1)
     }
 }

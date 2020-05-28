@@ -28,9 +28,8 @@ In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/
 document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
-        photoSlide(-1) //left <- show Prev image
+        photoSlide(-1) 
     } else if (e.keyCode == '39') {
-        // right -> show next image
         photoSlide(1)
     }
 }
