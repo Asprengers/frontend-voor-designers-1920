@@ -6,15 +6,34 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 
 # Project titel
-Beschrijf hier je eigen project.
-En voeg een link naar je demo toe.
+Carousel met vakantiefoto's: Een carousel met meerdere foto's van een vakantie, die je kan bedienen met een button en met de pijltjes op het toetsenbord.
+
+[website preview](https://asprengers.github.io/frontend-voor-designers-1920/opdracht2/demo/index.html)
 
 ## interface
-Leg de interface uit.
+De interface bestaat uit een foto waarbij je de volgende kan zien door middel van een klik van je muis of met je toetsenbord.
 
-In de demo heb je interface design principles 04, 08 & 09 van [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/) toegepast. Hoe heb je dat gedaan?
+De design principes zijn toegepast door:
+4 Keep users in control
+door dat je de volgende foto al voor de helft kan zien trekt dat je aandacht en wil je doorgaan *dit moet nog gedaan worden*
+8 Provide a natural next step
+door de pijltjes te volgen trekt dat je aan om naar de volgende te gaan
+9 Appearance follows behavior
+hoe het eruit ziet qua logica trekt het je aan om meer te klikken
 
 In de demo heb je meerdere [UI events](https://developer.mozilla.org/en-US/docs/Web/API/UIEvent) toegepast. Hoe heb je dat gedaan?
 
 ## code
-Leg de code uit.
+```
+document.onkeydown = function (e) {
+    e = e || window.event;
+    if (e.keyCode == '37') {
+        photoSlide(-1) //left <- show Prev image
+    } else if (e.keyCode == '39') {
+        // right -> show next image
+        photoSlide(1)
+    }
+}
+```
+
+Door middel van deze code kan je ervoor zorgen dat je naar de volgende foto kan door middel van je toetsenbord
