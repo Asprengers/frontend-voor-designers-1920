@@ -25,7 +25,7 @@ function showId(jsonObj) {
     for (i = 0; i < 20; i++) {
 
         const id = document.createElement('p');
-        title.textContent = jsonObj[i]['id'];
+        id.textContent = jsonObj[i]['id'];
     }
 
 }
