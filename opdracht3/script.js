@@ -32,33 +32,39 @@ function showId(jsonObj) {
 
 
 function showMovies(jsonObj) {
-    const list = jsonObj['reviews'];
-
+    const list = jsonObj;
     for (let i = 0; i < list.length; i++) {
+        console.log(list[i]);
         const myArticle = document.createElement('article');
+        const myH1 = document.createElement('h1');
+
         const myH2 = document.createElement('h2');
-        const myPara1 = document.createElement('p');
+
+        //        const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
         const myList = document.createElement('ul');
-
-        myH2.textContent = list[i].id;
-        myPara1.textContent = 'score: ' + list[i].score;
-        myPara2.textContent = 'movie_id: ' + list[i].movie_id;
+        myH1.textContent = list[i].id;
+        myH2.textContent = list[i].title;
+        //        myPara1.textContent = 'score: ' + list[i].score;
+        //        myPara2.textContent = 'movie_id: ' + list[i].movie_id;
         myPara3.textContent = 'actors:';
         const actors = list[i].actors;
         for (let j = 0; j < actors.length; j++) {
             const listItem = document.createElement('li');
-            listItem.textContent = actors[j];
+            listItem.textContent = actors[j].actor_name;
             myList.appendChild(listItem);
         }
+        myArticle.appendChild(myH1);
 
         myArticle.appendChild(myH2);
-        myArticle.appendChild(myPara1);
-        myArticle.appendChild(myPara2);
+        //        myArticle.appendChild(myPara1);
+        //        myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
         myArticle.appendChild(myList);
 
         section.appendChild(myArticle);
     }
+
+
 } // use a for loop to loop through each object in the array.
