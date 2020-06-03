@@ -20,6 +20,17 @@ request.onload = function () {
 //    header.appendChild(myPara);
 //}
 //Here we first create an <h1> element with createElement(), set its textContent to equal the squadName property of the object, then append it to the header using appendChild(). We then do a very similar operation with a paragraph: create it, set its text content and append it to the header. 
+function showId(jsonObj) {
+    var i;
+    for (i = 0; i < 20; i++) {
+
+        const id = document.createElement('p');
+        title.textContent = jsonObj[i]['id'];
+    }
+
+}
+
+
 function showMovies(jsonObj) {
     const list = jsonObj['reviews'];
 
