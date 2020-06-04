@@ -32,7 +32,13 @@ function showMovies(jsonObj) {
         const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
-        const myPara4 = document.createElement('p');
+
+
+
+        const myPara5 = document.createElement('p');
+        const myImage = document.createElement('img');
+        const myVideo = document.createElement('video');
+
         const myPara9 = document.createElement('p');
         const myList = document.createElement('ul');
         myH1.textContent = list[i].id; //gets id and stores in h1
@@ -40,7 +46,12 @@ function showMovies(jsonObj) {
         myPara1.textContent = 'plot: ' + list[i].plot;
         myPara2.textContent = 'simple plot: ' + list[i].simple_plot;
         myPara3.textContent = 'release date: ' + list[i].release_date;
-        myPara4.textContent = 'cover: ' + list[i].cover;
+        myImage.src = list[i].cover;
+        myVideo.src = list[i].trailer;
+
+
+        myPara5.textContent = 'trailer: ' + list[i].trailer;
+
         myPara9.textContent = 'actors:';
         //in here we need to go deeper in the json. this can only be created in a function. it will get all the list items that are inside the actors
         const actors = list[i].actors;
@@ -49,12 +60,18 @@ function showMovies(jsonObj) {
             listItem.textContent = actors[j].actor_name;
             myList.appendChild(listItem);
         }
+
+
         myArticle.appendChild(myH1); //append the h1 and makes it visible
         myArticle.appendChild(myH2);
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
-        myArticle.appendChild(myPara4);
+
+        myArticle.appendChild(myPara5);
+        myArticle.appendChild(myImage);
+        myArticle.appendChild(myVideo);
+
         myArticle.appendChild(myPara9);
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
