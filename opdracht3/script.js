@@ -37,18 +37,26 @@ function showMovies(jsonObj) {
         console.log(list[i]);
         const myArticle = document.createElement('article');
         const myH1 = document.createElement('h1');
-
         const myH2 = document.createElement('h2');
-
-        //        const myPara1 = document.createElement('p');
+        const myPara1 = document.createElement('p');
         const myPara2 = document.createElement('p');
         const myPara3 = document.createElement('p');
+        const myPara4 = document.createElement('p');
+
+
+
+        const myPara9 = document.createElement('p');
         const myList = document.createElement('ul');
         myH1.textContent = list[i].id;
         myH2.textContent = list[i].title;
-        //        myPara1.textContent = 'score: ' + list[i].score;
-        //        myPara2.textContent = 'movie_id: ' + list[i].movie_id;
-        myPara3.textContent = 'actors:';
+        myPara1.textContent = 'plot: ' + list[i].plot;
+        myPara2.textContent = 'simple plot: ' + list[i].simple_plot;
+        myPara3.textContent = 'release date: ' + list[i].release_date;
+        myPara4.textContent = 'cover: ' + list[i].cover;
+
+
+
+        myPara9.textContent = 'actors:';
         const actors = list[i].actors;
         for (let j = 0; j < actors.length; j++) {
             const listItem = document.createElement('li');
@@ -56,11 +64,15 @@ function showMovies(jsonObj) {
             myList.appendChild(listItem);
         }
         myArticle.appendChild(myH1);
-
         myArticle.appendChild(myH2);
-        //        myArticle.appendChild(myPara1);
-        //        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
         myArticle.appendChild(myPara3);
+
+        myArticle.appendChild(myPara4);
+
+
+        myArticle.appendChild(myPara9);
         myArticle.appendChild(myList);
 
         section.appendChild(myArticle);
