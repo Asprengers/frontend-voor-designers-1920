@@ -24,7 +24,7 @@ function showCats(jsonObj) {
 
         const myImage = document.createElement('img');
         const myList = document.createElement('ul');
-        myH1.textContent = 'reference id: ' + list[i].id; //gets id and stores in h1
+        myH1.textContent = 'id: ' + list[i].id; //gets id and stores in h1
         myImage.src = list[i].url;
 
 
