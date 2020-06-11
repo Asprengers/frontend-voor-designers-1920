@@ -20,23 +20,19 @@ function showCats(jsonObj) {
         const myArticle = document.createElement('article');
         const myH1 = document.createElement('h1'); //creates h1
         const myPara1 = document.createElement('p');
-        const myPara9 = document.createElement('p');
-        const myPara10 = document.createElement('p');
+
 
         const myImage = document.createElement('img');
         const myList = document.createElement('ul');
-        myH1.textContent = list[i].id; //gets id and stores in h1
+        myH1.textContent = 'reference id: ' + list[i].id; //gets id and stores in h1
         myImage.src = list[i].url;
-        myPara9.textContent = ''; //in here we need to go deeper in the json. this can only be created in a function. it will get all the list items that are inside the actors
-        myPara10.textContent = ''; //in here we need to go deeper in the json. this can only be created in a function. it will get all the list items that are inside the actors
+
 
         const breeds = list[i].breeds;
         for (let j = 0; j < breeds.length; j++) {
             const listItem = document.createElement('li');
-            listItem.textContent = breeds[j].origin;
-            myList.appendChild(listItem);
-            const listItemTwo = document.createElement('li');
-            listItemTwo.textContent = breeds[j].name;
+            listItem.textContent = 'Name: ' + breeds[j].name + '     Origin: ' + breeds[j].origin + ' Life span: ' + breeds[j].life_span;
+
             myList.appendChild(listItem);
         }
 
@@ -44,8 +40,7 @@ function showCats(jsonObj) {
         myArticle.appendChild(myH1); //append the h1 and makes it visible
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myImage);
-        myArticle.appendChild(myPara9);
-        myArticle.appendChild(myPara10);
+
 
         myArticle.appendChild(myList);
         section.appendChild(myArticle);

@@ -1,6 +1,7 @@
 * {
     color: black;
     font-size: 16px;
+    font-family: courier, arial, helvetica;
 }
 
 body {
@@ -21,13 +22,20 @@ img {
     border: 10px solid white;
 }
 
-ul,
+
 li {
     list-style: none;
-    background-color: burlywood;
-    height: 100px;
-    max-width: 100px;
-    color: black;
+    position: absolute;
+    top: 8%;
+    left: 60%;
+    background-color: cornsilk;
+    border: 10px solid white;
+    cursor: pointer;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    text-align: left;
+    padding: 10px;
 }
 
 button {
@@ -36,9 +44,18 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
+    background-color: white;
     border: none;
     padding: 16px 30px;
     cursor: pointer;
     text-align: center;
+}
+
+h1 {
+    text-decoration: underline;
+    color: white;
+    position: absolute;
+    top: 90%;
+    left: 1%;
+
 }
