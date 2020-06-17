@@ -20,14 +20,10 @@ function showCats(jsonObj) {
         const myArticle = document.createElement('article');
         const myH1 = document.createElement('h1'); //creates h1
         const myPara1 = document.createElement('p');
-
-
         const myImage = document.createElement('img');
         const myList = document.createElement('ul');
         myH1.textContent = 'id: ' + list[i].id; //gets id and stores in h1
         myImage.src = list[i].url;
-
-
         const breeds = list[i].breeds;
         for (let j = 0; j < breeds.length; j++) {
             const listItem = document.createElement('li');
@@ -57,8 +53,24 @@ document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
         window.location.reload();
-    } else if (e.keyCode == '39') {
+    } else
+    if (e.keyCode == '39') {
 
         window.location.reload();
     }
 }
+
+//bron: https://www.geeksforgeeks.org/how-to-show-page-loading-div-until-the-page-has-finished-loading/ 
+document.onreadystatechange = function () {
+    if (document.readyState !== "complete") {
+        document.querySelector(
+            "body").style.visibility = "hidden";
+        document.querySelector(
+            "#loader").style.visibility = "visible";
+    } else {
+        document.querySelector(
+            "#loader").style.display = "none";
+        document.querySelector(
+            "body").style.visibility = "visible";
+    }
+};

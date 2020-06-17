@@ -5,9 +5,11 @@
 }
 
 body {
-    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background: #f7af91;
+    background: linear-gradient(to right, #9eced8, #f4d5e4, #f7af91);
+
+
 }
 
 img {
@@ -17,8 +19,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
-    /*    width: 40%;
-    */
     border: 10px solid white;
 }
 
@@ -57,5 +57,28 @@ h1 {
     position: absolute;
     top: 90%;
     left: 1%;
+}
 
+#loader {
+    border: 12px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 12px solid #444444;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
