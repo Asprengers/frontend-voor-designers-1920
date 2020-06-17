@@ -64,21 +64,21 @@ request.onload = function () {
 
  const list = jsonObj; //makes sure javascript knows its json
 
-        const myH1 = document.createElement('h1'); //creates h1
+const myH1 = document.createElement('h1'); //creates h1
         
-        myH1.textContent = 'id: ' + list[i].id; //gets id and stores in h1
+myH1.textContent = 'id: ' + list[i].id; //gets id and stores in h1
         
-         myArticle.appendChild(myH1); //append the h1 and makes it visible
+myArticle.appendChild(myH1); //append the h1 and makes it visible
       
       
-         document.onkeydown = function (e) {
-    e = e || window.event;
-    if (e.keyCode == '37') {
-        window.location.reload();
+document.onkeydown = function (e) {
+e = e || window.event;
+if (e.keyCode == '37') {
+      window.location.reload();
     } else
-    if (e.keyCode == '39') {
+if (e.keyCode == '39') {
 
-        window.location.reload();
+window.location.reload();
     }
 }
 
