@@ -7,7 +7,7 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 # Random cat
 Voor dit project heb een een api gekozen [THE CAT API](https://api.thecatapi.com) die ik heb gekoppeld om willekeurige katten foto's te zien, met soms nog extra informatie over die kat, alleen als die beschikbaar zijn.
-![alt text](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/api.png "api image")
+![interface](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/api.png "api image")
 
 
 [preview: random cat](https://asprengers.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html)
@@ -46,7 +46,7 @@ De error state is toegepast door middel van de loading event. Als hij blijft lad
 De partial state is toegepast door middel van de optie, als er extra data is dan zie je een extra notitieblad die verdwijnt als die data niet beschikbaar is.
 ### Loading State
 De loading state is toegepast door een loading circle die in beeld is als de api aan het laden is en de afbeelding vervangt.
-![alt text](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/loader.png "loader image")
+![loader](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/loader2.png "loader image")
 
 ## code
 ``` const header = document.querySelector('header'); //grab references to the <header>  elements and store them in variables:
