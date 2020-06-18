@@ -45,8 +45,8 @@ De error state is toegepast door middel van de loading event. Als hij blijft lad
 ### Partial State
 De partial state is toegepast door middel van de optie, als er extra data is dan zie je een extra notitieblad die verdwijnt als die data niet beschikbaar is.
 ### Loading State
-de loading state is toegepast door een loading circle die in beeld is als de api aan het laden is en de afbeelding vervangt.
-
+De loading state is toegepast door een loading circle die in beeld is als de api aan het laden is en de afbeelding vervangt.
+![alt text](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/loader.png "loader image")
 
 ## code
 ``` const header = document.querySelector('header'); //grab references to the <header>  elements and store them in variables:
