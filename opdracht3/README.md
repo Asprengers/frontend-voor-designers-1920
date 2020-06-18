@@ -7,6 +7,8 @@ Lees hier de [opdrachtbeschrijving](./opdrachtbeschrijving.md).
 
 # Random cat
 Voor dit project heb een een api gekozen [THE CAT API](https://api.thecatapi.com) die ik heb gekoppeld om willekeurige katten foto's te zien, met soms nog extra informatie over die kat, alleen als die beschikbaar zijn.
+![alt text](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/api.png "api image")
+
 
 [random cat](https://asprengers.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html)
 
