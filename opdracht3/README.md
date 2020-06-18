@@ -95,6 +95,10 @@ function showPage() {
     document.getElementById("headerLoad").style.display = "block";
 }
 //shows the loader and after that the image when it's loaded
+```
+# bericht aan koop
+
+Na ons gesprek is het gelukt om de loader op een image te laten zien als deze laad. Je had gevraagd of ik nog wat problemen/vragen had maar eigenlijk heb ik die niet. Bedankt voor de lessen!
 
         
         
