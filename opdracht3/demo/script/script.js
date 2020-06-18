@@ -11,8 +11,6 @@ request.onload = function () {
     showCats(cats);
 } // waiting for response to return from server
 
-
-
 function showCats(jsonObj) {
     const list = jsonObj; //makes sure javascript knows its json
     for (let i = 0; i < list.length; i++) {
@@ -31,13 +29,9 @@ function showCats(jsonObj) {
 
             myList.appendChild(listItem);
         }
-
-
         myArticle.appendChild(myH1); //append the h1 and makes it visible
         myArticle.appendChild(myPara1);
         myArticle.appendChild(myImage);
-
-
         myArticle.appendChild(myList);
         section.appendChild(myArticle);
     }
@@ -48,6 +42,7 @@ document.getElementById("refresh").addEventListener("click", refreshButton);
 function refreshButton() {
     window.location.reload();
 }
+
 document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
@@ -59,19 +54,14 @@ document.onkeydown = function (e) {
     }
 }
 
-//bron: https://www.geeksforgeeks.org/how-to-show-page-loading-div-until-the-page-has-finished-loading/ 
+document.body.onload = showLoader();
+var loader;
 
+function showLoader() {
+    loader = setTimeout(showPage, 2000);
+}
 
-document.onreadystatechange = function () {
-    if (document.readyState !== "complete") {
-        document.querySelector(
-            "article").style.visibility = "hidden";
-        document.querySelector(
-            "#loader").style.visibility = "visible";
-    } else {
-        document.querySelector(
-            "#loader").style.display = "none";
-        document.querySelector(
-            "article").style.visibility = "visible";
-    }
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("headerLoad").style.display = "block";
 }

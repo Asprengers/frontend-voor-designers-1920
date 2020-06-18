@@ -8,8 +8,6 @@ body {
     background-repeat: no-repeat;
     background: #f7af91;
     background: linear-gradient(to right, #9eced8, #f4d5e4, #f7af91);
-
-
 }
 
 img {
@@ -59,12 +57,13 @@ h1 {
     left: 1%;
 }
 
+
 #loader {
-    border: 12px solid #f3f3f3;
+    border: 12px solid white;
     border-radius: 50%;
-    border-top: 12px solid #444444;
-    width: 70px;
-    height: 70px;
+    border-top: 12px solid black;
+    width: 90px;
+    height: 90px;
     animation: spin 1s linear infinite;
 }
 
@@ -76,9 +75,18 @@ h1 {
 
 .circle {
     position: absolute;
-    top: 0;
+    top: -150px;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+}
+
+#headerLoad {
+    display: none;
+    text-align: center;
+}
+
+header {
+    display: none;
 }
