@@ -98,7 +98,7 @@ function showPage() {
 ```
 # bericht aan koop
 
-Na ons gesprek is het gelukt om de loader op een image te laten zien als deze laad. Je had gevraagd of ik nog wat problemen/vragen had maar eigenlijk heb ik die niet. Bedankt voor de lessen!
+Na ons gesprek is het gelukt om de loader op een image te laten zien als deze laad. Je had gevraagd of ik nog wat problemen/vragen had maar eigenlijk heb ik die niet. Misschien weet jij nog iets wat leuk is om in te duiken om te leren? Bedankt voor de lessen!
 
         
         
