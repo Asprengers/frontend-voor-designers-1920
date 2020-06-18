@@ -48,7 +48,6 @@ document.getElementById("refresh").addEventListener("click", refreshButton);
 function refreshButton() {
     window.location.reload();
 }
-
 document.onkeydown = function (e) {
     e = e || window.event;
     if (e.keyCode == '37') {
@@ -61,16 +60,18 @@ document.onkeydown = function (e) {
 }
 
 //bron: https://www.geeksforgeeks.org/how-to-show-page-loading-div-until-the-page-has-finished-loading/ 
+
+
 document.onreadystatechange = function () {
     if (document.readyState !== "complete") {
         document.querySelector(
-            "body").style.visibility = "hidden";
+            "article").style.visibility = "hidden";
         document.querySelector(
             "#loader").style.visibility = "visible";
     } else {
         document.querySelector(
             "#loader").style.display = "none";
         document.querySelector(
-            "body").style.visibility = "visible";
+            "article").style.visibility = "visible";
     }
-};
+}
