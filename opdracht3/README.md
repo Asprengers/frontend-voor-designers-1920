@@ -10,7 +10,7 @@ Voor dit project heb een een api gekozen [THE CAT API](https://api.thecatapi.com
 ![alt text](https://github.com/Asprengers/frontend-voor-designers-1920/blob/master/opdracht3/demo/img/api.png "api image")
 
 
-[random cat](https://asprengers.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html)
+[preview: random cat](https://asprengers.github.io/frontend-voor-designers-1920/opdracht3/demo/index.html)
 
 ## interface
 De interface bestaat uit een button waarmee je een nieuwe kat kan generen. Daarnaast is het ook mogelijk om door middel met je links of rechts pijltjes van je toetsenbord een nieuwe te zoeken.
@@ -85,5 +85,16 @@ window.location.reload();
 }
 
 // makes sure that you can use the keys on keyboard
+
+function showLoader() {
+    loader = setTimeout(showPage, 2000);
+}
+// creates a timeout on the website 
+function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("headerLoad").style.display = "block";
+}
+//shows the loader and after that the image when it's loaded
+
         
         
